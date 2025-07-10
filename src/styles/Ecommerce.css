@@ -1,0 +1,76 @@
+.contenedor {
+  display: flex;
+  height: 100vh;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.producto-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.precio {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f3f3f3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.usuario-info {
+  text-align: center;
+}
+
+.usuario-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-contenido {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.error {
+  color: red;
+  margin: 5px 0;
+}
+
+
